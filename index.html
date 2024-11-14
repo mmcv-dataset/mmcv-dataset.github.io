@@ -73,22 +73,22 @@
           {
             "@type": "DataDownload",
             "encodingFormat": "JSON",
-            "contentUrl": "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_train_v1.1.json"
+            "contentUrl": "https://raw.githubusercontent.com/mmfc-dataset/MMFC/refs/heads/main/Dataset/1hop.json"
           },
           {
             "@type": "DataDownload",
             "encodingFormat": "JSON",
-            "contentUrl": "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_dev_distractor_v1.json"
+            "contentUrl": "https://raw.githubusercontent.com/mmfc-dataset/MMFC/refs/heads/main/Dataset/2hop.json"
           },
           {
             "@type": "DataDownload",
             "encodingFormat": "JSON",
-            "contentUrl": "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_dev_fullwiki_v1.json"
+            "contentUrl": "https://raw.githubusercontent.com/mmfc-dataset/MMFC/refs/heads/main/Dataset/3hop.json"
           },
           {
             "@type": "DataDownload",
             "encodingFormat": "JSON",
-            "contentUrl": "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_test_fullwiki_v1.json"
+            "contentUrl": "https://raw.githubusercontent.com/mmfc-dataset/MMFC/refs/heads/main/Dataset/4hop.json"
           }
         ]
       }
@@ -155,7 +155,7 @@
             <div class="list-group-item">
               <h4>What is MMFC?</h4>
               <p>
-                HotpotQA is a multimodal claim verification dataset featuring
+                MMFC is a multimodal claim verification dataset featuring
                 natural, multi-hop claims, with strong supervision for
                 supporting facts to enable more explainable fact-checking
                 systems. It is collected by a team of NLP researchers at
@@ -190,9 +190,45 @@
 
               <p class="text-center">
                 <a
-                  href="http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_train_v1.1.json"
+                  href="https://github.com/mmfc-dataset/MMFC/blob/main/Dataset/mmfc.json"
                   ><button type="button" class="btn btn-success">
-                    1 hop (535MB)
+                    Combined (14.3MB)
+                  </button></a
+                >
+              </p>
+
+              <p class="text-center">
+                <a
+                  href="https://github.com/mmfc-dataset/MMFC/blob/main/Dataset/1hop.json"
+                  ><button type="button" class="btn btn-secondary">
+                    1 hop (5.03MB)
+                  </button></a
+                >
+              </p>
+
+              <p class="text-center">
+                <a
+                  href="https://github.com/mmfc-dataset/MMFC/blob/main/Dataset/2hop.json"
+                  ><button type="button" class="btn btn-secondary">
+                    2 hop (8.18MB)
+                  </button></a
+                >
+              </p>
+
+              <p class="text-center">
+                <a
+                  href="https://github.com/mmfc-dataset/MMFC/blob/main/Dataset/3hop.json"
+                  ><button type="button" class="btn btn-secondary">
+                    3 hop (726KB)
+                  </button></a
+                >
+              </p>
+
+              <p class="text-center">
+                <a
+                  href="https://github.com/mmfc-dataset/MMFC/blob/main/Dataset/4hop.json"
+                  ><button type="button" class="btn btn-secondary">
+                    4 hop (405KB)
                   </button></a
                 >
               </p>
@@ -200,9 +236,29 @@
               <p>
                 A more comprehensive summary about data download, preprocessing,
                 baseline model training, and evaluation is included in our
-                <a href="https://github.com/hotpotqa/hotpot"
+                <a href="https://github.com/mmfc-dataset/MMFC"
                   >GitHub repository</a
                 >.
+              </p>
+            </div>
+
+            <div class="list-group-item">
+              <h4>Evaluation</h4>
+              As explained in the Sec 5 of the paper, zero-shot multimodal claim
+              verification using various MLLMs under two settings. In the
+              closed-book setting, the model does not retrieve information from
+              external knowledge sources and must rely on its parametric
+              (internal) knowledge to verify the claim. In the open-book
+              setting, the model is provided with a set of gold evidence. Please
+              refer to our evaluation script provided below for calculating the
+              performance metrics.
+              <p class="text-center">
+                <a
+                  href="https://github.com/mmfc-dataset/MMFC/blob/main/evaluation.py"
+                  ><button type="button" class="btn btn-success">
+                    Evaluation script
+                  </button></a
+                >
               </p>
             </div>
 
@@ -213,11 +269,11 @@
                 following BibTeX entry
               </p>
               <pre>
-@inproceedings{yang2018hotpotqa,
-  title={{HotpotQA}: A Dataset for Diverse, Explainable Multi-hop Question Answering},
-  author={Yang, Zhilin and Qi, Peng and Zhang, Saizheng and Bengio, Yoshua and Cohen, William W. and Salakhutdinov, Ruslan and Manning, Christopher D.},
-  booktitle={Conference on Empirical Methods in Natural Language Processing ({EMNLP})},
-  year={2018}
+@inproceedings{TBD,
+  title={Piecing It All Together: Verifying Multi-Hop Multimodal Claims},
+  author={TBD},
+  booktitle={TBD},
+  year={2024}
 }</pre
               >
             </div>
@@ -225,7 +281,7 @@
         </div>
         <div class="col-lg-8">
           <div class="card card-outline-secondary">
-            <div class="card-header">Leaderboard (Distractor Setting)</div>
+            <div class="card-header">Leaderboard</div>
             <div class="card-body">
               To verify MMFC claim, the system must first retrieve the
               supporting facts from the corpus and predict whether the claim is
