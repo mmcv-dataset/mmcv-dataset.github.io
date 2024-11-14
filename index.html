@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>MMFC Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom fonts for this template -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet" />
+    <link href="css/hotpotqa.css" rel="stylesheet" />
+
+    <meta
+      name="google-site-verification"
+      content="h3zCtOJy9KzG1XWf5-3ppU1liaJ8NkpGvK_BbOOq3-4"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "MMFC: A Dataset for Multi-Hop Multimodal Fact-Checking",
+        "description": "Multi-Hop Multimodal Claim Verification Task",
+        "url": "https://mmfc-dataset.github.io/",
+        "keywords": [
+          "Multimodal Fact Checking",
+          "Natural Language Processing",
+          "Multi-hop Reasoning",
+          "Explainable Artificial Intelligence"
+        ],
+        "creator": {
+          "@type": "Organization",
+          "url": "https://mmfc-dataset.github.io/",
+          "name": "Illinois Institute of Technology, Emory University",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "url": "https://haoranwang18.github.io/",
+            "email": "hwang219@hawk.iit.edu"
+          }
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_train_v1.1.json"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_dev_distractor_v1.json"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_dev_fullwiki_v1.json"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_test_fullwiki_v1.json"
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">MMFC</a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://huggingface.co/"
+                >Hugging Face</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/blue.jpeg')">
+      <div class="container" style="height: 400px">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <div class="logo">
+                <img
+                  src="img/mmfc_logo.png"
+                  alt="logo"
+                  style="height: 200px; top: -50px"
+                />
+              </div>
+              <!--           <h1>HoVer</h1>
+ -->
+              <span class="subheading logo"
+                >A Dataset for <span class="line">Multi-Hop</span>
+                <span class="line">Multimodal</span> Fact-Checking
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container" id="main">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="list-group">
+            <div class="list-group-item">
+              <h4>What is MMFC?</h4>
+              <p>
+                HotpotQA is a multimodal claim verification dataset featuring
+                natural, multi-hop claims, with strong supervision for
+                supporting facts to enable more explainable fact-checking
+                systems. It is collected by a team of NLP researchers at
+                <a href="https://www.iit.edu/computer-science"
+                  >Illinois Institute of Technology</a
+                >, and
+                <a href="https://computerscience.emory.edu/">Emory University</a
+                >.
+              </p>
+              <p>
+                For more details about MMFC, please refer to our COLING 2025
+                paper:
+              </p>
+              <p class="text-center">
+                <a href="https://arxiv.org/pdf/00.00.pdf"
+                  ><button type="button" class="btn btn-info">
+                    (Wang, Rangapur, et al. 2025)
+                  </button></a
+                >
+              </p>
+            </div>
+            <div class="list-group-item">
+              <h4>Getting started</h4>
+              <p>
+                MMFC is distributed under a
+                <a
+                  rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                  >CC BY-SA 4.0 License</a
+                >. The training and development sets can be downloaded below.
+              </p>
+
+              <p class="text-center">
+                <a
+                  href="http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_train_v1.1.json"
+                  ><button type="button" class="btn btn-success">
+                    1 hop (535MB)
+                  </button></a
+                >
+              </p>
+
+              <p>
+                A more comprehensive summary about data download, preprocessing,
+                baseline model training, and evaluation is included in our
+                <a href="https://github.com/hotpotqa/hotpot"
+                  >GitHub repository</a
+                >.
+              </p>
+            </div>
+
+            <div class="list-group-item">
+              <h4>Citation</h4>
+              <p>
+                If you use MMFC in your research, please cite our paper with the
+                following BibTeX entry
+              </p>
+              <pre>
+@inproceedings{yang2018hotpotqa,
+  title={{HotpotQA}: A Dataset for Diverse, Explainable Multi-hop Question Answering},
+  author={Yang, Zhilin and Qi, Peng and Zhang, Saizheng and Bengio, Yoshua and Cohen, William W. and Salakhutdinov, Ruslan and Manning, Christopher D.},
+  booktitle={Conference on Empirical Methods in Natural Language Processing ({EMNLP})},
+  year={2018}
+}</pre
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card card-outline-secondary">
+            <div class="card-header">Leaderboard (Distractor Setting)</div>
+            <div class="card-body">
+              To verify MMFC claim, the system must first retrieve the
+              supporting facts from the corpus and predict whether the claim is
+              supported or not. The retrieved facts are evaluated against the
+              ground-truth to yield accuracy F1 scores.
+              <table class="table table-responsive">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col" rowspan="2"></th>
+                    <th
+                      scope="col"
+                      rowspan="2"
+                      class="align-middle text-center"
+                    >
+                      Model
+                    </th>
+                    <th
+                      scope="col"
+                      rowspan="2"
+                      class="align-middle text-center"
+                    >
+                      Code
+                    </th>
+                    <th scope="col" colspan="4" class="text-center">
+                      Closed-Book
+                    </th>
+                    <th scope="col" colspan="4" class="text-center">
+                      Open-Book
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="col" class="text-center">1-Hop</th>
+                    <th scope="col" class="text-center">2-Hop</th>
+                    <th scope="col" class="text-center">3-Hop</th>
+                    <th scope="col" class="text-center">4-Hop</th>
+                    <th scope="col" class="text-center">1-Hop</th>
+                    <th scope="col" class="text-center">2-Hop</th>
+                    <th scope="col" class="text-center">3-Hop</th>
+                    <th scope="col" class="text-center">4-Hop</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row" class="align-middle text-center">
+                      1<br />
+                      <span class="badge badge-secondary">Sep 16, 2024</span>
+                    </td>
+                    <td class="align-middle text-center">
+                      MMFC Baseline<br />
+                      <span class="affiliation">Illinois Tech</span><br /><a
+                        href="https://arxiv.org/abs/0000"
+                        class="paperlink"
+                        >(Wang, Rangapur, et al. 2024)</a
+                      >
+                    </td>
+                    <td class="align-middle text-center">
+                      <a href="https://github.com/canghongjian/beam_retriever"
+                        ><i class="far fa-file-alt"></i
+                      ></a>
+                    </td>
+                    <td class="align-middle text-center">
+                      <strong>71.79</strong>
+                    </td>
+                    <td class="align-middle text-center">
+                      <strong>63.87</strong>
+                    </td>
+                    <td class="align-middle text-center">
+                      <strong>66.76</strong>
+                    </td>
+                    <td class="align-middle text-center">
+                      <strong>64.64</strong>
+                    </td>
+                    <td class="align-middle text-center">
+                      <strong>79.20</strong>
+                    </td>
+                    <td class="align-middle text-center">
+                      <strong>71.66</strong>
+                    </td>
+                    <td class="align-middle text-center">
+                      <strong>65.86</strong>
+                    </td>
+                    <td class="align-middle text-center">
+                      <strong>66.97</strong>
+                    </td>
+                  </tr>
+
+                  <!-- <tr>
+                    <td scope="row" class="align-middle text-center">
+                      2<br />
+                      <span class="badge badge-secondary">Jul 7, 2022</span>
+                    </td>
+                    <td class="align-middle text-center">
+                      PipNet (single model)<br />
+                      <span class="affiliation">Tencent Cloud Xiaowei</span
+                      ><br />
+                    </td>
+                    <td class="align-middle text-center">
+                      <div class="crossed">
+                        <i class="far fa-file text-danger"></i>
+                      </div>
+                    </td>
+                    <td class="align-middle text-center">72.26</td>
+                    <td class="align-middle text-center">84.86</td>
+                    <td class="align-middle text-center">63.71</td>
+                    <td class="align-middle text-center">89.41</td>
+                    <td class="align-middle text-center">48.76</td>
+                    <td class="align-middle text-center">76.95</td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p class="copyright text-muted">
+              Copyright &copy; MMFC Team, 2024-2025.
+            </p>
+            <p class="copyright text-muted">
+              Theme adapted from Start Bootstrap's
+              <a href="https://startbootstrap.com/theme/clean-blog"
+                >Clean Blog</a
+              >
+              template,
+              <a href="https://hotpotqa.github.io/index.html">HotpotQA</a> and
+              <a href="https://hover-nlp.github.io/">HoVer</a> home page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+  </body>
+</html>
